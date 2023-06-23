@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManegeController">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: #FF9900;">
+         <children>
+            <Text layoutX="347.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Hotel System">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button layoutX="38.0" layoutY="451.0" mnemonicParsing="false" onAction="#checkOut" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: blue;" text="CheckOut" textFill="WHITE" />
+      <Button onAction="#goToBill" layoutX="41.0" layoutY="505.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="144.0" style="-fx-background-color: blue;" text="Bill Details" textFill="WHITE" />
+      <Button layoutX="38.0" layoutY="394.0" mnemonicParsing="false" onAction="#CheckIn" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: blue;" text="CheckIn " textFill="WHITE" />
+      <Button layoutX="38.0" layoutY="336.0" mnemonicParsing="false" onAction="#manageRoom" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: blue;" text="Manage Room" textFill="WHITE" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="32.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true" styleClass="imageuser">
+         <image>
+            <Image url="@../picture/user.png" />
+         </image>
+      </ImageView>
+      <Text fill="#e4470a" layoutX="78.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="892.0" layoutY="555.0" mnemonicParsing="false" onAction="#logOut" text="Log out" textFill="#d77842" />
+      <TableView fx:id="tbV" layoutX="266.0" layoutY="175.0" prefHeight="364.0" prefWidth="698.0">
+        <columns>
+          <TableColumn fx:id="tcRoom" prefWidth="164.0" text="Name Room" />
+          <TableColumn fx:id="tcType" prefWidth="172.0" text="Type" />
+            <TableColumn fx:id="tcPrice" prefWidth="190.0" text="Price" />
+            <TableColumn fx:id="tcStatus" prefWidth="171.0" text="Status   " />
+        </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="266.0" layoutY="131.0" prefHeight="31.0" prefWidth="698.0" promptText="Search Room..." style="-fx-background-radius: 20px;" stylesheets="@stylesheet.css" />
+   </children>
+   <stylesheets>
+      <URL value="@stylesheet.css" />
+
+   </stylesheets>
+
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+    <children>
+        <Text fill="#2ad300" layoutX="398.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Room">
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="34.0" />
+            </font>
+        </Text>
+        <TableView fx:id="tbV" layoutX="33.0" layoutY="167.0" prefHeight="402.0" prefWidth="929.0">
+            <columns>
+                <TableColumn fx:id="tcRoom" prefWidth="172.0" text="Room" />
+                <TableColumn fx:id="tcType" prefWidth="148.0" text="Type" />
+                <TableColumn fx:id="tcPrice" prefWidth="195.0" text="Price" />
+                <TableColumn fx:id="tcStatus" minWidth="0.0" prefWidth="175.0" text="Status" />
+            <TableColumn fx:id="tcEditRoom" prefWidth="118.0" text="Edit Room" />
+            <TableColumn fx:id="tcDeleteRoom" prefWidth="120.0" text="Delete Room" />
+            </columns>
+        </TableView>
+        <TextField fx:id="search" layoutX="48.0" layoutY="109.0" prefHeight="31.0" prefWidth="700.0" promptText="Search" style="-fx-background-radius: 15px;" styleClass="search" />
+      <Button layoutX="859.0" layoutY="109.0" mnemonicParsing="false" onAction="#create" prefHeight="31.0" prefWidth="103.0" text="Create" textFill="#ff9900" />
+      <Button layoutX="33.0" layoutY="36.0" mnemonicParsing="false" onAction="#backHome" styleClass="btn" stylesheets="@stylesheet.css" text="&lt;&lt; Back" textFill="WHITE" />
+    </children>
+    <stylesheets>
+        <URL value="@stylesheet.css" />
+
+    </stylesheets>
+
+</Pane>

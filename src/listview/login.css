@@ -1,0 +1,4 @@
+.bgimg{
+-fx-background-image: url('../picture/hotel1.jpg');
+-fx-background-size:cover;
+}

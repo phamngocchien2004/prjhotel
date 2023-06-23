@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FormAddRoom">
+   <children>
+      <Text fill="#2ad300" layoutX="420.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Room">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtNameRoom" layoutX="188.0" layoutY="142.0" prefHeight="45.0" prefWidth="624.0" promptText="Name Room" />
+      <TextField fx:id="txtType" layoutX="188.0" layoutY="230.0" prefHeight="45.0" prefWidth="624.0" promptText="Type" />
+      <TextField fx:id="txtPrice" layoutX="188.0" layoutY="315.0" prefHeight="45.0" prefWidth="624.0" promptText="Price" />
+      <TextField fx:id="txtStatus" layoutX="188.0" layoutY="405.0" prefHeight="45.0" prefWidth="624.0" promptText="Status" />
+      <Button layoutX="729.0" layoutY="491.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: blue;" text="Add" textFill="WHITE" />
+      <Button layoutX="57.0" layoutY="41.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: blue;" text="&lt;&lt; Back " textFill="WHITE" />
+   </children>
+</Pane>

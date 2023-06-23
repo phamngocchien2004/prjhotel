@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FF9900;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BillController">
+    <children>
+        <TableView fx:id="tVb" layoutY="199.0" prefHeight="401.0" prefWidth="1000.0">
+            <columns>
+                <TableColumn fx:id="txtId" prefWidth="87.0" text="BilliD" />
+                <TableColumn fx:id="txtName" prefWidth="209.0" text="CustomerName" />
+                <TableColumn fx:id="txtPhone" prefWidth="177.0" text="PhoneCustomer" />
+                <TableColumn fx:id="txtRoom" prefWidth="134.0" text="RoomNumber" />
+                <TableColumn fx:id="txtIn" prefWidth="135.0" text="CheckIn" />
+                <TableColumn fx:id="txtOut" prefWidth="153.0" text="CheckOut" />
+                <TableColumn fx:id="txtPrice" prefWidth="103.0" text="Price($)" />
+
+            </columns>
+        </TableView>
+        <Text layoutX="463.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <Text layoutX="392.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bills Details" wrappingWidth="216.93359375">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Text>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToHome" text="&lt;&lt;Back" />
+        <TextField fx:id="search" layoutX="64.0" layoutY="101.0" prefHeight="38.0" prefWidth="209.0" promptText="Type Date" styleClass="textfield" stylesheets="@stylesheet.css" />
+    </children>
+</AnchorPane>

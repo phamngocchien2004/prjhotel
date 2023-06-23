@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:controller="controller.CheckOut22Controller"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane layoutY="-4.0" prefHeight="135.0" prefWidth="1000.0" style="-fx-background-color: orange;">
+            <children>
+                <Text fill="#2200ff" layoutX="417.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Out">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Text>
+                <Button onAction="#back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="&lt;&lt; Back" />
+            </children>
+        </AnchorPane>
+        <TextField fx:id="txtNameRoom" layoutX="192.0" layoutY="221.0" prefHeight="48.0" prefWidth="266.0" />
+        <TextField fx:id="txtPrice" layoutX="547.0" layoutY="407.0" prefHeight="48.0" prefWidth="266.0" />
+        <TextField fx:id="txtNameCustomer" layoutX="547.0" layoutY="221.0" prefHeight="48.0" prefWidth="266.0" />
+        <TextField fx:id="txtCccd" layoutX="191.0" layoutY="407.0" prefHeight="48.0" prefWidth="266.0" />
+        <TextField fx:id="txtPhoneNumber" layoutX="192.0" layoutY="313.0" prefHeight="48.0" prefWidth="620.0" />
+        <TextField fx:id="txtCheckIn" layoutX="192.0" layoutY="506.0" prefHeight="48.0" prefWidth="266.0" />
+        <Text layoutX="198.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room: ">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Text layoutX="560.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Text layoutX="198.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer:">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Text layoutX="201.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD:">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Text layoutX="575.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number:">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Text>
+        <Text layoutX="203.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check In:">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Text layoutX="575.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Out:">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <DatePicker fx:id="txtCheckOut" layoutX="547.0" layoutY="506.0" prefHeight="48.0" prefWidth="266.0" />
+        <Button onAction="#finish" layoutX="856.0" layoutY="554.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: blue;" text="Check" textFill="WHITE" />
+    </children>
+</AnchorPane>

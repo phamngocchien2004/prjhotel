@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-image: ..\picture\user.png;" styleClass="bgimg" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Text fill="#2c2c2a" layoutX="295.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUser" layoutX="132.0" layoutY="180.0" opacity="0.58" prefHeight="48.0" prefWidth="488.0" promptText="User Name" />
+      <PasswordField fx:id="txtPassword" layoutX="129.0" layoutY="269.0" opacity="0.59" prefHeight="48.0" prefWidth="494.0" promptText="Password" />
+      <Button  layoutX="129.0" layoutY="361.0" mnemonicParsing="false" onAction="#login" prefHeight="42.0" prefWidth="494.0" style="-fx-background-color: blue;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+   <stylesheets>
+      <URL value="@login.css" />
+   </stylesheets>
+</Pane>
