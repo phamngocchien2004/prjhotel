@@ -5,34 +5,72 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheckInController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChekinController">
     <children>
-        <AnchorPane prefHeight="158.0" prefWidth="1000.0" style="-fx-background-color: #FF9900;">
+        <AnchorPane prefHeight="167.0" prefWidth="1000.0" style="-fx-background-color: #ff9900;">
             <children>
-                <Label layoutX="408.0" layoutY="39.0" text="Checkin Room">
+                <Label layoutX="367.0" layoutY="47.0" prefHeight="52.0" prefWidth="267.0" text="Customer Checkin">
                     <font>
-                        <Font name="Segoe UI Black" size="33.0" />
+                        <Font name="System Bold" size="27.0" />
                     </font>
                 </Label>
-                <Button layoutX="43.0" layoutY="39.0" mnemonicParsing="false" onAction="#backHome" text="&lt;&lt;Back" />
+                <Button layoutX="21.0" layoutY="22.0" mnemonicParsing="false" onAction="#tobackHome" text="&lt;&lt;Back Home">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Button>
             </children>
         </AnchorPane>
-        <Label layoutX="119.0" layoutY="210.0" text="Room Order ">
-            <font>
-                <Font name="Segoe UI Black" size="27.0" />
-            </font>
-        </Label>
-        <Label layoutX="643.0" layoutY="209.0" text="Customer Order ">
-            <font>
-                <Font name="Segoe UI Black" size="29.0" />
-            </font>
-        </Label>
-        <TextField fx:id="txtNameRoom" layoutX="110.0" layoutY="310.0" promptText="Name Room" />
-        <TextField fx:id="txtPrice" layoutX="110.0" layoutY="385.0" promptText="Price Room" />
-        <TextField fx:id="txtNameCus" layoutX="654.0" layoutY="285.0" promptText="Customer Name" />
-        <TextField fx:id="txtIDCus" layoutX="654.0" layoutY="341.0" promptText="Customer CCCD" />
-        <TextField fx:id="txtTelCus" layoutX="654.0" layoutY="401.0" promptText="Customer Phone" />
-        <DatePicker fx:id="txtDateIn" layoutX="690.0" layoutY="458.0" prefHeight="31.0" prefWidth="115.0" promptText="Check In" />
-        <Button layoutX="832.0" layoutY="523.0" mnemonicParsing="false" onAction="#checkIn" text="Check In&gt;&gt;" />
+        <AnchorPane layoutX="-15.0" layoutY="167.0" prefHeight="438.0" prefWidth="1008.0">
+            <children>
+                <Label layoutX="103.0" layoutY="61.0" prefHeight="27.0" prefWidth="144.0" text="Name Customer">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="103.0" layoutY="138.0" prefHeight="27.0" prefWidth="144.0" text="Id Customer">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="100.0" layoutY="214.0" prefHeight="27.0" prefWidth="150.0" text="Phone Customer">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="617.0" layoutY="61.0" prefHeight="27.0" prefWidth="144.0" text="Room Type">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="617.0" layoutY="138.0" text="Room Number">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="617.0" layoutY="214.0" prefHeight="27.0" prefWidth="123.0" text="Price">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="103.0" layoutY="304.0" text="Checkin Date">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtName" layoutX="117.0" layoutY="95.0" promptText="Name" />
+                <TextField fx:id="txtId" layoutX="117.0" layoutY="176.0" promptText="ID" />
+                <TextField fx:id="txtPhone" layoutX="117.0" layoutY="259.0" promptText="Phone" />
+                <TextField fx:id="txtTime" layoutX="117.0" layoutY="340.0" promptText="Time" />
+                <TextField fx:id="txtPrice" layoutX="606.0" layoutY="259.0" promptText="Price" />
+                <Button layoutX="840.0" layoutY="371.0" mnemonicParsing="false" onAction="#toCheckin" text="Chekin&gt;&gt;">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Button>
+            <ComboBox fx:id="cbType" onAction="#chooseType" layoutX="606.0" layoutY="95.0" prefHeight="31.0" prefWidth="187.0" />
+            <ComboBox fx:id="cbNumber" onAction="#chooseRoom" layoutX="606.0" layoutY="176.0" prefHeight="31.0" prefWidth="187.0" />
+            </children>
+        </AnchorPane>
     </children>
-</AnchorPane>
+</Pane>
