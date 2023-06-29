@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 
 public class Connector {
     private static Connector instance;
-    private final static String connection= "jdbc:mysql://localhost:3306/hotel_jp";
+    private final static String connection= "jdbc:mysql://localhost:3306/g5_hotel";
     private final static String user = "root";
     private final static String pwd = "";
     private Connection conn;

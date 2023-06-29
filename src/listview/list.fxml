@@ -1,65 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.text.*?>
 <?import java.lang.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane fx:controller="controller.CheckOut22Controller"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheckOut22Controller">
     <children>
-        <AnchorPane layoutY="-4.0" prefHeight="135.0" prefWidth="1000.0" style="-fx-background-color: orange;">
+        <AnchorPane prefHeight="167.0" prefWidth="1000.0" style="-fx-background-color: #ff9900;">
             <children>
-                <Text fill="#2200ff" layoutX="417.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Out">
+                <Label layoutX="367.0" layoutY="47.0" prefHeight="52.0" prefWidth="267.0" text="Customer Checkout">
                     <font>
-                        <Font size="36.0" />
+                        <Font name="System Bold" size="27.0" />
                     </font>
-                </Text>
-                <Button onAction="#back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="&lt;&lt; Back" />
+                </Label>
+                <Button layoutX="21.0" layoutY="22.0" mnemonicParsing="false" onAction="#goToBack" text="&lt;&lt;Back Home">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Button>
             </children>
         </AnchorPane>
-        <TextField fx:id="txtNameRoom" layoutX="192.0" layoutY="221.0" prefHeight="48.0" prefWidth="266.0" />
-        <TextField fx:id="txtPrice" layoutX="547.0" layoutY="407.0" prefHeight="48.0" prefWidth="266.0" />
-        <TextField fx:id="txtNameCustomer" layoutX="547.0" layoutY="221.0" prefHeight="48.0" prefWidth="266.0" />
-        <TextField fx:id="txtCccd" layoutX="191.0" layoutY="407.0" prefHeight="48.0" prefWidth="266.0" />
-        <TextField fx:id="txtPhoneNumber" layoutX="192.0" layoutY="313.0" prefHeight="48.0" prefWidth="620.0" />
-        <TextField fx:id="txtCheckIn" layoutX="192.0" layoutY="506.0" prefHeight="48.0" prefWidth="266.0" />
-        <Text layoutX="198.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room: ">
-            <font>
-                <Font size="20.0" />
-            </font>
-        </Text>
-        <Text layoutX="560.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:">
-            <font>
-                <Font size="20.0" />
-            </font>
-        </Text>
-        <Text layoutX="198.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer:">
-            <font>
-                <Font size="20.0" />
-            </font>
-        </Text>
-        <Text layoutX="201.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD:">
-            <font>
-                <Font size="20.0" />
-            </font>
-        </Text>
-        <Text layoutX="575.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number:">
-            <font>
-                <Font size="19.0" />
-            </font>
-        </Text>
-        <Text layoutX="203.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check In:">
-            <font>
-                <Font size="20.0" />
-            </font>
-        </Text>
-        <Text layoutX="575.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Out:">
-            <font>
-                <Font size="20.0" />
-            </font>
-        </Text>
-        <DatePicker fx:id="txtCheckOut" layoutX="547.0" layoutY="506.0" prefHeight="48.0" prefWidth="266.0" />
-        <Button onAction="#finish" layoutX="856.0" layoutY="554.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: blue;" text="Check" textFill="WHITE" />
+        <AnchorPane layoutX="7.0" layoutY="167.0" prefHeight="438.0" prefWidth="1008.0">
+            <children>
+                <Label layoutX="103.0" layoutY="25.0" prefHeight="27.0" prefWidth="144.0" text="Name Customer">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="103.0" layoutY="113.0" prefHeight="27.0" prefWidth="144.0" text="Id Customer">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="100.0" layoutY="187.0" prefHeight="27.0" prefWidth="150.0" text="Phone Customer">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="617.0" layoutY="61.0" prefHeight="27.0" prefWidth="144.0" text="Room Type">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="617.0" layoutY="138.0" text="Room Number">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="617.0" layoutY="214.0" prefHeight="27.0" prefWidth="123.0" text="Price">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="100.0" layoutY="263.0" text="Checkin Date">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtNameCustomer" layoutX="103.0" layoutY="59.0" promptText="Name" />
+                <TextField fx:id="txtId" layoutX="103.0" layoutY="140.0" promptText="ID" />
+                <TextField fx:id="txtPhoneNumber" layoutX="103.0" layoutY="219.0" promptText="Phone" />
+                <TextField fx:id="txtTime" layoutX="100.0" layoutY="296.0" promptText="Time" />
+                <TextField fx:id="txtPrice" layoutX="606.0" layoutY="259.0" promptText="Price" />
+                <TextField fx:id="txtType" layoutX="606.0" layoutY="95.0" promptText="Type" />
+                <TextField fx:id="txtNameRoom" layoutX="606.0" layoutY="176.0" promptText="Number" />
+                <Button layoutX="840.0" layoutY="371.0" mnemonicParsing="false" onAction="#finish" text="Chekout&gt;&gt;">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="txtDateOut" layoutX="100.0" layoutY="371.0" promptText="Time Out" />
+            <Text layoutX="103.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Label layoutX="100.0" layoutY="340.0" text="CheckOut Date" />
+            <Text layoutX="617.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total :" />
+            <TextField  fx:id="txtTotal" layoutX="606.0" layoutY="346.0" />
+            </children>
+        </AnchorPane>
     </children>
-</AnchorPane>
+</Pane>

@@ -53,7 +53,7 @@
                         <Font name="System Bold Italic" size="18.0" />
                     </font>
                 </Label>
-                <Label layoutX="103.0" layoutY="304.0" text="Checkin Date">
+                <Label layoutX="24.0" layoutY="396.0" opacity="0.0" text="Checkin Date">
                     <font>
                         <Font name="System Bold Italic" size="18.0" />
                     </font>
@@ -61,15 +61,15 @@
                 <TextField fx:id="txtName" layoutX="117.0" layoutY="95.0" promptText="Name" />
                 <TextField fx:id="txtId" layoutX="117.0" layoutY="176.0" promptText="ID" />
                 <TextField fx:id="txtPhone" layoutX="117.0" layoutY="259.0" promptText="Phone" />
-                <TextField fx:id="txtTime" layoutX="117.0" layoutY="340.0" promptText="Time" />
+                <TextField fx:id="txtTime" layoutX="24.0" layoutY="394.0" opacity="0.0" promptText="Time" />
                 <TextField fx:id="txtPrice" layoutX="606.0" layoutY="259.0" promptText="Price" />
+                <TextField fx:id="txtType" layoutX="606.0" layoutY="95.0" promptText="Type" />
+                <TextField fx:id="txtNumber" layoutX="606.0" layoutY="176.0" promptText="Number" />
                 <Button layoutX="840.0" layoutY="371.0" mnemonicParsing="false" onAction="#toCheckin" text="Chekin&gt;&gt;">
                     <font>
                         <Font name="System Bold" size="17.0" />
                     </font>
                 </Button>
-            <ComboBox fx:id="cbType" onAction="#chooseType" layoutX="606.0" layoutY="95.0" prefHeight="31.0" prefWidth="187.0" />
-            <ComboBox fx:id="cbNumber" onAction="#chooseRoom" layoutX="606.0" layoutY="176.0" prefHeight="31.0" prefWidth="187.0" />
             </children>
         </AnchorPane>
     </children>

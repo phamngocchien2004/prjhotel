@@ -1,11 +1,14 @@
 package daopattern;
 
-import model.Check;
+import model.ToCheckin;
 
 import java.util.ArrayList;
 
 public interface IRepository<C> {
     ArrayList<C> getAll();
+
+
+    ArrayList<ToCheckin> getAll1();
 
     Boolean create(C c);
 
@@ -13,7 +16,5 @@ public interface IRepository<C> {
 
     Boolean delete(C c);
 
-    Check find(String id);
 
-    Check find(Integer id);
 }

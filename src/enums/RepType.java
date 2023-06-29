@@ -2,5 +2,5 @@ package enums;
 
 
 public enum RepType {
-    ROOM,Order,Bill;
+    ROOM,Bill,Checkin,ToCheckin,ToCheckout;
 }

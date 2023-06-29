@@ -54,6 +54,11 @@ public class CheckinReposity implements IRespository<Checkin> {
     }
 
     @Override
+    public ArrayList<Checkin> getAll1() {
+        return null;
+    }
+
+    @Override
     public Boolean create(Checkin checkin) {
         try {
 
@@ -63,11 +68,16 @@ public class CheckinReposity implements IRespository<Checkin> {
             stt.setString(1, checkin.getName());
             stt.setString(2,checkin.getId());
             stt.setString(3,checkin.getPhone());
-            stt.setString(4,checkin.getTime());
+            stt.setString(4, checkin.getTime());
             stt.setString(5,checkin.getType());
             stt.setString(6,checkin.getNameRoom());
             stt.setDouble(7,checkin.getPrice());
             stt.executeUpdate();
+            String sql_txt = "update room set status=? where nameRoom=?";
+            PreparedStatement stq = conn.prepareStatement(sql_txt);
+            stq.setString(1,"BOOKED");
+            stq.setString(2, checkin.getNameRoom());
+            stq.executeUpdate();
             return true;
         } catch (Exception e){
             System.out.println(e.getMessage());

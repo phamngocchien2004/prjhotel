@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Date;
+
 public class Checkin {
 
 
@@ -23,6 +25,9 @@ public class Checkin {
     }
 
     public Checkin(String name, String id, String phone, String time, double price) {
+    }
+
+    public Checkin(String name, String id, String phone, String type, String nameRoom, double price) {
     }
 
     public String getName() {
@@ -65,7 +70,7 @@ public class Checkin {
         this.nameRoom = nameRoom;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 

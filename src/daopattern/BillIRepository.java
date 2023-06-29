@@ -48,6 +48,11 @@ public class BillIRepository implements IRespository<Bill> {
     }
 
     @Override
+    public ArrayList<Bill> getAll1() {
+        return null;
+    }
+
+    @Override
     public Boolean create(Bill bill) {
         return null;
     }

@@ -41,7 +41,7 @@ public class RoomIRepository implements IRespository<Room> {
                 String room = rs.getString("nameRoom");
                 String type = rs.getString("type");
                 Double price = (double) rs.getInt("price");
-                String st = rs.getString("st");
+                String st = rs.getString("status");
                 Room s = new Room(room, type, price, st);
                 rooms.add(s);
             }
@@ -49,6 +49,11 @@ public class RoomIRepository implements IRespository<Room> {
 
         }
         return rooms;
+    }
+
+    @Override
+    public ArrayList<Room> getAll1() {
+        return null;
     }
 
     @Override

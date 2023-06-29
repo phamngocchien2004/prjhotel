@@ -99,13 +99,13 @@ public class ManegeController implements Initializable {
     }
 
     public void CheckIn(ActionEvent actionEvent) throws Exception {
-        Parent root = load(getClass().getResource("../listview/checkin.fxml"));
+        Parent root = load(getClass().getResource("../listview/toCheckin.fxml"));
         Main.mainStage.setScene(new Scene(root, 1000, 600));
 
     }
 
     public void checkOut(ActionEvent actionEvent) throws Exception {
-        Parent root = load(getClass().getResource("../listview/checkout.fxml"));
+        Parent root = load(getClass().getResource("../listview/toCheckout.fxml"));
         Main.mainStage.setScene(new Scene(root, 1000, 600));
 
     }
